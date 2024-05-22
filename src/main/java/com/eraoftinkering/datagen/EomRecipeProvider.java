@@ -17,6 +17,7 @@ public class EomRecipeProvider extends RecipeProvider implements IToolRecipeHelp
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
         String toolFolder = "tools/building/";
         toolBuilding(consumer, Items.SAW, toolFolder);
+        toolBuilding(consumer, Items.HAMMER, toolFolder);
     }
 
     @Override

@@ -16,5 +16,6 @@ public class Items {
     private static final Item.Properties TOOL = new Item.Properties().stacksTo(1).tab(CreativeModeTabs.EOM_TOOLS);
 
     public static final RegistryObject<ModifiableItem> SAW = ITEMS.register("saw", () -> new ModifiableItem(TOOL, ToolDefinitions.SAW));
+    public static final RegistryObject<ModifiableItem> HAMMER = ITEMS.register("hammer", ()-> new ModifiableItem(TOOL, ToolDefinitions.HAMMER));
 
 }

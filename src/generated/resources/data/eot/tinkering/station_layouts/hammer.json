@@ -1,7 +1,7 @@
 {
-  "translation_key": "item.eot.saw",
+  "translation_key": "item.eot.hammer",
   "icon": {
-    "item": "eot:saw",
+    "item": "eot:hammer",
     "nbt": "{Damage:0,tic_broken:0b,tic_display:1b,tic_materials:[\"tconstruct:ui_render#head\",\"tconstruct:ui_render#handle\",\"tconstruct:ui_render#extra\",\"tconstruct:ui_render#large\",\"tconstruct:ui_render#extra_large\"]}"
   },
   "sortIndex": 6,
@@ -16,12 +16,12 @@
       }
     },
     {
-      "icon": "tconstruct:broad_blade",
-      "translation_key": "item.tconstruct.broad_blade",
+      "icon": "tconstruct:hammer_head",
+      "translation_key": "item.tconstruct.hammer_head",
       "x": 28,
       "y": 38,
       "filter": {
-        "item": "tconstruct:broad_blade"
+        "item": "tconstruct:hammer_head"
       }
     }
   ]

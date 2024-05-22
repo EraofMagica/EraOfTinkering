@@ -14,6 +14,7 @@ public class EomLangProvider extends LanguageProvider {
     protected void addTranslations() {
         //Items
         addItem(Items.SAW, "Saw");
+        addItem(Items.HAMMER, "Hammer");
 
         //Creative Tabs
         add("itemGroup.eot.tools", "Era Of Tinkering");

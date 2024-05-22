@@ -12,6 +12,18 @@
     {
       "path": "eot:item/tool/saw/blade",
       "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/hammer/head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/hammer/broken_head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/hammer/handle",
+      "statType": "tconstruct:handle"
     }
   ]
 }
