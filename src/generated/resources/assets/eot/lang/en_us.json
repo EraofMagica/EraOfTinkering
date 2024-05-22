@@ -1,3 +1,5 @@
 {
-  "item.eot.saw": "Saw"
+  "item.eot.saw": "Saw",
+  "item.eot.saw.description": "The Saw is a versatile tool used for crafting with wood, mainly used for bringing wood into the right shape",
+  "itemGroup.eot.tools": "Era Of Tinkering"
 }
