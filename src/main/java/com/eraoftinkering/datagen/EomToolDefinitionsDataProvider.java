@@ -23,17 +23,17 @@ public class EomToolDefinitionsDataProvider extends AbstractToolDefinitionDataPr
     protected void addToolDefinitions() {
 
         define(ToolDefinitions.SAW)
-                .part(TinkerToolParts.toolHandle)
                 .part(TinkerToolParts.broadBlade)
+                .part(TinkerToolParts.toolHandle)
                 .stat(ToolStats.ATTACK_DAMAGE, 1f)
                 .stat(ToolStats.ATTACK_SPEED, 0.8f)
                 .startingSlots(SlotType.UPGRADE, 2);
 
         define(ToolDefinitions.HAMMER)
-                .part(TinkerToolParts.toolHandle)
                 .part(TinkerToolParts.hammerHead)
+                .part(TinkerToolParts.toolHandle)
                 .stat(ToolStats.ATTACK_DAMAGE, 1f)
-                .stat(ToolStats.ATTACK_SPEED, 0.f)
+                .stat(ToolStats.ATTACK_SPEED, 0.8f)
                 .startingSlots(SlotType.UPGRADE, 2);
 
     }

@@ -7,21 +7,21 @@
   "sortIndex": 6,
   "input_slots": [
     {
-      "icon": "tconstruct:tool_handle",
-      "translation_key": "item.tconstruct.tool_handle",
-      "x": 46,
-      "y": 56,
-      "filter": {
-        "item": "tconstruct:tool_handle"
-      }
-    },
-    {
       "icon": "tconstruct:broad_blade",
       "translation_key": "item.tconstruct.broad_blade",
-      "x": 28,
+      "x": 46,
       "y": 38,
       "filter": {
         "item": "tconstruct:broad_blade"
+      }
+    },
+    {
+      "icon": "tconstruct:tool_handle",
+      "translation_key": "item.tconstruct.tool_handle",
+      "x": 28,
+      "y": 56,
+      "filter": {
+        "item": "tconstruct:tool_handle"
       }
     }
   ]

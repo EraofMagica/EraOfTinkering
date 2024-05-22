@@ -7,21 +7,21 @@
   "sortIndex": 6,
   "input_slots": [
     {
-      "icon": "tconstruct:tool_handle",
-      "translation_key": "item.tconstruct.tool_handle",
-      "x": 46,
-      "y": 56,
-      "filter": {
-        "item": "tconstruct:tool_handle"
-      }
-    },
-    {
       "icon": "tconstruct:hammer_head",
       "translation_key": "item.tconstruct.hammer_head",
       "x": 28,
       "y": 38,
       "filter": {
         "item": "tconstruct:hammer_head"
+      }
+    },
+    {
+      "icon": "tconstruct:tool_handle",
+      "translation_key": "item.tconstruct.tool_handle",
+      "x": 46,
+      "y": 56,
+      "filter": {
+        "item": "tconstruct:tool_handle"
       }
     }
   ]
