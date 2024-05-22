@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "parts": [
+    {
+      "path": "eot:item/tool/saw/handle",
+      "statType": "tconstruct:handle"
+    },
+    {
+      "path": "eot:item/tool/saw/broken_blade",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/saw/blade",
+      "statType": "tconstruct:head"
+    }
+  ]
+}

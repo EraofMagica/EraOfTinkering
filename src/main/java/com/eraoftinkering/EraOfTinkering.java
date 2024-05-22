@@ -1,6 +1,7 @@
 package com.eraoftinkering;
 
 import com.eraoftinkering.datagen.EomLangProvider;
+import com.eraoftinkering.datagen.EomPartSpriteProvider;
 import com.eraoftinkering.datagen.EomToolDefinitionsDataProvider;
 import com.eraoftinkering.registries.Items;
 import com.mojang.logging.LogUtils;
@@ -15,15 +16,16 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.slf4j.Logger;
+import slimeknights.tconstruct.library.client.data.material.GeneratorPartTextureJsonGenerator;
+import slimeknights.tconstruct.library.client.data.material.MaterialPartTextureGenerator;
 import slimeknights.tconstruct.library.client.model.tools.ToolModel;
-import slimeknights.tconstruct.tools.data.material.MaterialRenderInfoProvider;
 import slimeknights.tconstruct.tools.data.sprite.TinkerMaterialSpriteProvider;
 
 
 @Mod("eot")
 @Mod.EventBusSubscriber(bus =Mod.EventBusSubscriber.Bus.MOD)
 public class EraOfTinkering {
-    // Directly reference a slf4j logger
+    
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final String MOD_ID = "eot";
@@ -45,9 +47,13 @@ public class EraOfTinkering {
             gen.addProvider(new EomToolDefinitionsDataProvider(gen));
         }
         if (event.includeClient()) {
-            TinkerMaterialSpriteProvider materialSpriteProvider = new TinkerMaterialSpriteProvider();
-            gen.addProvider(new MaterialRenderInfoProvider(gen, materialSpriteProvider));
+            EomPartSpriteProvider partSprites = new EomPartSpriteProvider();
             gen.addProvider(new EomLangProvider(gen));
+            gen.addProvider(new GeneratorPartTextureJsonGenerator(gen, EraOfTinkering.MOD_ID, partSprites));
+
+            //Tool part generator, keep this executing as the last one, it crashes at "overslime border"
+            //But seems to function the same practically, this may cause future issues
+            gen.addProvider(new MaterialPartTextureGenerator(gen, event.getExistingFileHelper(), partSprites, new TinkerMaterialSpriteProvider()));
         }
     }
 
