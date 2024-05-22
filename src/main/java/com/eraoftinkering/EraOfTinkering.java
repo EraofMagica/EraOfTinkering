@@ -1,9 +1,6 @@
 package com.eraoftinkering;
 
-import com.eraoftinkering.datagen.EomLangProvider;
-import com.eraoftinkering.datagen.EomPartSpriteProvider;
-import com.eraoftinkering.datagen.EomToolDefinitionsDataProvider;
-import com.eraoftinkering.datagen.EomToolSlotLayout;
+import com.eraoftinkering.datagen.*;
 import com.eraoftinkering.registries.Items;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.color.item.ItemColors;
@@ -45,8 +42,11 @@ public class EraOfTinkering {
     public static void gatherData(final GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
         if (event.includeServer()) {
+            EomBlockTagsProvider tags = new EomBlockTagsProvider(gen, event.getExistingFileHelper());
             gen.addProvider(new EomToolDefinitionsDataProvider(gen));
             gen.addProvider(new EomToolSlotLayout(gen));
+            gen.addProvider(new EomRecipeProvider(gen));
+            gen.addProvider(new EomItemTagsProvider(gen, tags, event.getExistingFileHelper()));
         }
         if (event.includeClient()) {
             EomPartSpriteProvider partSprites = new EomPartSpriteProvider();

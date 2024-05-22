@@ -17,5 +17,9 @@ public class EomLangProvider extends LanguageProvider {
 
         //Creative Tabs
         add("itemGroup.eot.tools", "Era Of Tinkering");
+
+        //Tool station Tooltips
+
+        add("item.eot.saw.description", "The Saw is a versatile tool used for crafting with wood, mainly used for bringing wood into the right shape");
     }
 }

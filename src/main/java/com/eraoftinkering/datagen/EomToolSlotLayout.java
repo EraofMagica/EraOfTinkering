@@ -17,8 +17,8 @@ public class EomToolSlotLayout extends AbstractStationSlotLayoutProvider {
     protected void addLayouts() {
         defineModifiable(Items.SAW)
                 .sortIndex(SORT_HARVEST)
-                .addInputItem(TinkerToolParts.broadBlade, 0, 0)
-                .addInputItem(TinkerToolParts.toolHandle, 10, 10)
+                .addInputItem(TinkerToolParts.broadBlade, 28, 38)
+                .addInputItem(TinkerToolParts.toolHandle, 46, 56)
                 .build();
     }
 
