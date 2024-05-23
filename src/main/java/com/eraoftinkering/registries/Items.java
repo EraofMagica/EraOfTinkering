@@ -2,7 +2,6 @@ package com.eraoftinkering.registries;
 
 import com.eraoftinkering.EraOfTinkering;
 import com.eraoftinkering.tinkers.ToolDefinitions;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

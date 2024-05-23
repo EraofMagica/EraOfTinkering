@@ -9,8 +9,8 @@ import slimeknights.tconstruct.library.data.recipe.IToolRecipeHelper;
 import java.util.function.Consumer;
 
 public class EomRecipeProvider extends RecipeProvider implements IToolRecipeHelper {
-    public EomRecipeProvider(DataGenerator p_125973_) {
-        super(p_125973_);
+    public EomRecipeProvider(DataGenerator gen) {
+        super(gen);
     }
 
     @Override

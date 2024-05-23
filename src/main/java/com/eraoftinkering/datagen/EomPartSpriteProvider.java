@@ -22,7 +22,6 @@ public class EomPartSpriteProvider extends AbstractPartSpriteProvider {
      */
     @Override
     protected void addAllSpites() {
-
         buildTool("saw").addBreakableHead("blade").addHandle("handle");
         buildTool("hammer").addBreakableHead("head").addHandle("handle");
     }
