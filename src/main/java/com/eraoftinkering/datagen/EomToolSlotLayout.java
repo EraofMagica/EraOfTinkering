@@ -26,6 +26,12 @@ public class EomToolSlotLayout extends AbstractStationSlotLayoutProvider {
                 .addInputItem(TinkerToolParts.hammerHead, 28, 38)
                 .addInputItem(TinkerToolParts.toolHandle, 46, 56)
                 .build();
+
+        defineModifiable(Items.FILE)
+                .sortIndex(SORT_HARVEST)
+                .addInputItem(TinkerToolParts.smallBlade, 28, 38)
+                .addInputItem(TinkerToolParts.toughHandle, 46, 56)
+                .build();
     }
 
     @Override

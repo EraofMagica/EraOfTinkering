@@ -1,0 +1,19 @@
+{
+  "parts": [
+    {
+      "item": "tconstruct:small_blade"
+    },
+    {
+      "item": "tconstruct:tough_handle"
+    }
+  ],
+  "stats": {
+    "base": {
+      "tconstruct:attack_damage": 1.0,
+      "tconstruct:attack_speed": 1.4
+    }
+  },
+  "slots": {
+    "upgrades": 2
+  }
+}

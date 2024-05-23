@@ -24,6 +24,18 @@
     {
       "path": "eot:item/tool/hammer/handle",
       "statType": "tconstruct:handle"
+    },
+    {
+      "path": "eot:item/tool/file/head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/file/broken_head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/file/handle",
+      "statType": "tconstruct:handle"
     }
   ]
 }

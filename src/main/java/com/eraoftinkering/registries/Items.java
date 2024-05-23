@@ -16,5 +16,6 @@ public class Items {
 
     public static final RegistryObject<ModifiableItem> SAW = ITEMS.register("saw", () -> new ModifiableItem(TOOL, ToolDefinitions.SAW));
     public static final RegistryObject<ModifiableItem> HAMMER = ITEMS.register("hammer", ()-> new ModifiableItem(TOOL, ToolDefinitions.HAMMER));
+    public static final RegistryObject<ModifiableItem> FILE = ITEMS.register("file", () -> new ModifiableItem(TOOL, ToolDefinitions.FILE));
 
 }
