@@ -2,6 +2,10 @@
   "replace": false,
   "parts": [
     {
+      "path": "eot:item/tool/parts/wrench_head",
+      "statType": "tconstruct:head"
+    },
+    {
       "path": "eot:item/tool/saw/handle",
       "statType": "tconstruct:handle"
     },
@@ -35,6 +39,30 @@
     },
     {
       "path": "eot:item/tool/file/handle",
+      "statType": "tconstruct:handle"
+    },
+    {
+      "path": "eot:item/tool/screwdriver/head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/screwdriver/broken_head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/screwdriver/handle",
+      "statType": "tconstruct:handle"
+    },
+    {
+      "path": "eot:item/tool/wrench/head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/wrench/broken_head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/wrench/handle",
       "statType": "tconstruct:handle"
     }
   ]

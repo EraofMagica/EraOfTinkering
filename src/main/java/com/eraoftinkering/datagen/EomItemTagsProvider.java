@@ -18,11 +18,11 @@ public class EomItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
-        tag(TinkerTags.Items.MODIFIABLE).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get());
-        tag(TinkerTags.Items.DURABILITY).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get());
-        tag(TinkerTags.Items.MULTIPART_TOOL).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get());
-        tag(TinkerTags.Items.MELEE).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get());
-        tag(TinkerTags.Items.HELD).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get());
-        tag(TinkerTags.Items.HARVEST).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get());
+        tag(TinkerTags.Items.MODIFIABLE).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get(), Items.SCREWDRIVER.get(), Items.WRENCH.get());
+        tag(TinkerTags.Items.DURABILITY).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get(), Items.SCREWDRIVER.get(), Items.WRENCH.get());
+        tag(TinkerTags.Items.MULTIPART_TOOL).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get(), Items.SCREWDRIVER.get(), Items.WRENCH.get());
+        tag(TinkerTags.Items.MELEE).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get(), Items.SCREWDRIVER.get(), Items.WRENCH.get());
+        tag(TinkerTags.Items.HELD).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get(), Items.SCREWDRIVER.get(), Items.WRENCH.get());
+        tag(TinkerTags.Items.HARVEST).add(Items.SAW.get(), Items.HAMMER.get(), Items.FILE.get(), Items.SCREWDRIVER.get(), Items.WRENCH.get());
     }
 }

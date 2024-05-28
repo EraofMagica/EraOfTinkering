@@ -1,0 +1,14 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head": "eot:item/tool/screwdriver/head",
+    "broken_head": "eot:item/tool/screwdriver/broken_head",
+    "handle": "eot:item/tool/screwdriver/handle"
+  },
+  "modifier_roots": ["eot:item/tool/screwdriver/modifiers/"],
+  "parts": [
+    {"name":  "head", "index": 0, "broken": "broken_head"},
+    {"name":  "handle", "index": 1}
+  ]
+}

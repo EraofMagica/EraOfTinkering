@@ -3,6 +3,8 @@
   "values": [
     "eot:saw",
     "eot:hammer",
-    "eot:file"
+    "eot:file",
+    "eot:screwdriver",
+    "eot:wrench"
   ]
 }

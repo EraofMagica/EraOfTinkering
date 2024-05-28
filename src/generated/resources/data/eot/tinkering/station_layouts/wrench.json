@@ -1,0 +1,28 @@
+{
+  "translation_key": "item.eot.wrench",
+  "icon": {
+    "item": "eot:wrench",
+    "nbt": "{Damage:0,tic_broken:0b,tic_display:1b,tic_materials:[\"tconstruct:ui_render#head\",\"tconstruct:ui_render#handle\",\"tconstruct:ui_render#extra\",\"tconstruct:ui_render#large\",\"tconstruct:ui_render#extra_large\"]}"
+  },
+  "sortIndex": 6,
+  "input_slots": [
+    {
+      "icon": "eot:wrench_head",
+      "translation_key": "item.eot.wrench_head",
+      "x": 46,
+      "y": 38,
+      "filter": {
+        "item": "eot:wrench_head"
+      }
+    },
+    {
+      "icon": "tconstruct:tough_handle",
+      "translation_key": "item.tconstruct.tough_handle",
+      "x": 28,
+      "y": 56,
+      "filter": {
+        "item": "tconstruct:tough_handle"
+      }
+    }
+  ]
+}

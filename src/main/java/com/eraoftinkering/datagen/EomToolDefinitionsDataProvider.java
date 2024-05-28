@@ -1,8 +1,10 @@
 package com.eraoftinkering.datagen;
 
 import com.eraoftinkering.EraOfTinkering;
+import com.eraoftinkering.registries.Items;
 import com.eraoftinkering.tinkers.ToolDefinitions;
 import net.minecraft.data.DataGenerator;
+import slimeknights.tconstruct.common.registration.CastItemObject;
 import slimeknights.tconstruct.library.data.tinkering.AbstractToolDefinitionDataProvider;
 import slimeknights.tconstruct.library.tools.SlotType;
 import slimeknights.tconstruct.library.tools.stat.ToolStats;
@@ -41,6 +43,20 @@ public class EomToolDefinitionsDataProvider extends AbstractToolDefinitionDataPr
                 .part(TinkerToolParts.toughHandle)
                 .stat(ToolStats.ATTACK_DAMAGE, 1f)
                 .stat(ToolStats.ATTACK_SPEED, 1.4f)
+                .startingSlots(SlotType.UPGRADE, 2);
+
+        define(ToolDefinitions.SCREWDRIVER)
+                .part(TinkerToolParts.broadBlade)
+                .part(TinkerToolParts.toughHandle)
+                .stat(ToolStats.ATTACK_DAMAGE, 1f)
+                .stat(ToolStats.ATTACK_SPEED, 1.2f)
+                .startingSlots(SlotType.UPGRADE, 2);
+
+        define(ToolDefinitions.WRENCH)
+                .part(Items.WRENCH_HEAD)
+                .part(TinkerToolParts.toughHandle)
+                .stat(ToolStats.ATTACK_DAMAGE, 1f)
+                .stat(ToolStats.ATTACK_SPEED, 1.2f)
                 .startingSlots(SlotType.UPGRADE, 2);
     }
 

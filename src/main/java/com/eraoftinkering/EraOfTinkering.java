@@ -33,6 +33,7 @@ public class EraOfTinkering {
         IEventBus MOD_BUS = FMLJavaModLoadingContext.get().getModEventBus();
 
         Items.ITEMS.register(MOD_BUS);
+        Items.TCONSTRUCT.register(MOD_BUS);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

@@ -16,6 +16,12 @@ public class EomLangProvider extends LanguageProvider {
         addItem(Items.SAW, "Saw");
         addItem(Items.HAMMER, "Hammer");
         addItem(Items.FILE, "File");
+        addItem(Items.SCREWDRIVER, "Screwdriver");
+        addItem(Items.WRENCH, "Wrench");
+        addItem(Items.WRENCH_HEAD, "Wrench Head");
+        add("item.eot.wrench_head_cast", "Wrench Head Gold Cast");
+        add("item.eot.wrench_head_red_sand_cast", "Wrench Head Red Sand Cast");
+        add("item.eot.wrench_head_sand_cast", "Wrench Head Sand Cast");
 
         //Creative Tabs
         add("itemGroup.eot.tools", "Era Of Tinkering");

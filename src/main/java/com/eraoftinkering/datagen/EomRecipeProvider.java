@@ -19,6 +19,8 @@ public class EomRecipeProvider extends RecipeProvider implements IToolRecipeHelp
         toolBuilding(consumer, Items.SAW, toolFolder);
         toolBuilding(consumer, Items.HAMMER, toolFolder);
         toolBuilding(consumer, Items.FILE, toolFolder);
+        toolBuilding(consumer, Items.SCREWDRIVER, toolFolder);
+        toolBuilding(consumer, Items.WRENCH, toolFolder);
     }
 
     @Override
