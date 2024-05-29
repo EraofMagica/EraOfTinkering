@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:molding_table",
+  "material": {
+    "item": "tconstruct:blank_sand_cast"
+  },
+  "pattern": {
+    "item": "eot:wrench_head",
+    "type": "tconstruct:material"
+  },
+  "result": "eot:wrench_head_sand_cast"
+}

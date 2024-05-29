@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:part_builder",
+  "pattern": "eot:wrench_head",
+  "pattern_item": [
+    {
+      "tag": "tconstruct:patterns/default"
+    },
+    {
+      "item": "eot:wrench_head_cast"
+    }
+  ],
+  "cost": 3,
+  "result": {
+    "item": "eot:wrench_head"
+  }
+}
