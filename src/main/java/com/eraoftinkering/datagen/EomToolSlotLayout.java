@@ -17,32 +17,38 @@ public class EomToolSlotLayout extends AbstractStationSlotLayoutProvider {
     protected void addLayouts() {
         defineModifiable(Items.SAW)
                 .sortIndex(SORT_HARVEST)
-                .addInputItem(TinkerToolParts.broadBlade, 46, 38)
-                .addInputItem(TinkerToolParts.toolHandle, 28, 56)
+                .addInputItem(TinkerToolParts.broadBlade, 39, 35)
+                .addInputItem(TinkerToolParts.toolHandle, 21, 53)
                 .build();
 
         defineModifiable(Items.HAMMER)
                 .sortIndex(SORT_HARVEST)
-                .addInputItem(TinkerToolParts.hammerHead, 28, 38)
-                .addInputItem(TinkerToolParts.toolHandle, 46, 56)
+                .addInputItem(TinkerToolParts.hammerHead, 39, 35)
+                .addInputItem(TinkerToolParts.toolHandle, 21, 53)
                 .build();
 
         defineModifiable(Items.FILE)
                 .sortIndex(SORT_HARVEST)
-                .addInputItem(TinkerToolParts.smallBlade, 28, 38)
-                .addInputItem(TinkerToolParts.toughHandle, 46, 56)
+                .addInputItem(TinkerToolParts.smallBlade, 39, 35)
+                .addInputItem(TinkerToolParts.toughHandle, 21, 53)
                 .build();
 
         defineModifiable(Items.SCREWDRIVER)
                 .sortIndex(SORT_HARVEST)
-                .addInputItem(TinkerToolParts.broadBlade, 46, 38)
-                .addInputItem(TinkerToolParts.toughHandle, 28, 56)
+                .addInputItem(TinkerToolParts.broadBlade, 39, 35)
+                .addInputItem(TinkerToolParts.toughHandle, 21, 53)
                 .build();
 
         defineModifiable(Items.WRENCH)
                 .sortIndex(SORT_HARVEST)
-                .addInputItem(Items.WRENCH_HEAD, 46, 38)
-                .addInputItem(TinkerToolParts.toughHandle, 28, 56)
+                .addInputItem(Items.WRENCH_HEAD, 39, 35)
+                .addInputItem(TinkerToolParts.toughHandle, 21, 53)
+                .build();
+
+        defineModifiable(Items.KNIFE)
+                .sortIndex(SORT_HARVEST)
+                .addInputItem(Items.KNIFE_HEAD, 39, 35)
+                .addInputItem(TinkerToolParts.toolHandle, 21, 53)
                 .build();
     }
 

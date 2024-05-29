@@ -1,13 +1,18 @@
 {
   "item.eot.file": "File",
   "item.eot.hammer": "Hammer",
+  "item.eot.knife": "Knife",
+  "item.eot.knife_head": "Knife Head",
+  "item.eot.knife_head_cast": "Knife Head Gold Cast",
+  "item.eot.knife_head_red_sand_cast": "Knife Head Red Sand Cast",
+  "item.eot.knife_head_sand_cast": "Knife Head Sand Cast",
   "item.eot.saw": "Saw",
   "item.eot.saw.description": "The Saw is a versatile tool used for crafting with wood, mainly used for bringing wood into the right shape",
   "item.eot.screwdriver": "Screwdriver",
   "item.eot.wrench": "Wrench",
   "item.eot.wrench_head": "Wrench Head",
-  "item.eot.wrench_head_cast": "Wrench Head Gold Cast",
-  "item.eot.wrench_head_red_sand_cast": "Wrench Head Red Sand Cast",
-  "item.eot.wrench_head_sand_cast": "Wrench Head Sand Cast",
+  "item.eot.wrench_head_cast": "Knife Head Gold Cast",
+  "item.eot.wrench_head_red_sand_cast": "Knife Head Red Sand Cast",
+  "item.eot.wrench_head_sand_cast": "Knife Head Sand Cast",
   "itemGroup.eot.tools": "Era Of Tinkering"
 }

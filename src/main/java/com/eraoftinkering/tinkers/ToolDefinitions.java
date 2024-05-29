@@ -10,4 +10,5 @@ public class ToolDefinitions {
     public static final ToolDefinition FILE = ToolDefinition.builder(Items.FILE).meleeHarvest().build();
     public static final ToolDefinition SCREWDRIVER = ToolDefinition.builder(Items.SCREWDRIVER).meleeHarvest().build();
     public static final ToolDefinition WRENCH = ToolDefinition.builder(Items.WRENCH).meleeHarvest().build();
+    public static final ToolDefinition KNIFE = ToolDefinition.builder(Items.KNIFE).meleeHarvest().build();
 }

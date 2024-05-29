@@ -6,6 +6,10 @@
       "statType": "tconstruct:head"
     },
     {
+      "path": "eot:item/tool/parts/knife_head",
+      "statType": "tconstruct:head"
+    },
+    {
       "path": "eot:item/tool/saw/handle",
       "statType": "tconstruct:handle"
     },
@@ -63,6 +67,18 @@
     },
     {
       "path": "eot:item/tool/wrench/handle",
+      "statType": "tconstruct:handle"
+    },
+    {
+      "path": "eot:item/tool/knife/head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/knife/broken_head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/knife/handle",
       "statType": "tconstruct:handle"
     }
   ]

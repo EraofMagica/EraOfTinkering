@@ -9,8 +9,8 @@
     {
       "icon": "eot:wrench_head",
       "translation_key": "item.eot.wrench_head",
-      "x": 46,
-      "y": 38,
+      "x": 39,
+      "y": 35,
       "filter": {
         "item": "eot:wrench_head"
       }
@@ -18,8 +18,8 @@
     {
       "icon": "tconstruct:tough_handle",
       "translation_key": "item.tconstruct.tough_handle",
-      "x": 28,
-      "y": 56,
+      "x": 21,
+      "y": 53,
       "filter": {
         "item": "tconstruct:tough_handle"
       }

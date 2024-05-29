@@ -58,6 +58,14 @@ public class EomToolDefinitionsDataProvider extends AbstractToolDefinitionDataPr
                 .stat(ToolStats.ATTACK_DAMAGE, 1f)
                 .stat(ToolStats.ATTACK_SPEED, 1.2f)
                 .startingSlots(SlotType.UPGRADE, 2);
+
+        define(ToolDefinitions.KNIFE)
+                .part(Items.KNIFE_HEAD)
+                .part(TinkerToolParts.toolHandle)
+                .stat(ToolStats.ATTACK_DAMAGE, 2f)
+                .stat(ToolStats.ATTACK_SPEED, 1.5f)
+                .startingSlots(SlotType.UPGRADE, 1)
+                .startingSlots(SlotType.ABILITY, 1);
     }
 
     /**

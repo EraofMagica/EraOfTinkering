@@ -1,6 +1,7 @@
 package com.eraoftinkering.registries;
 
 import com.eraoftinkering.EraOfTinkering;
+import com.eraoftinkering.items.ModifiedKnifeItem;
 import com.eraoftinkering.tinkers.ToolDefinitions;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -29,10 +30,13 @@ public class Items {
     public static final RegistryObject<ModifiableItem> FILE = ITEMS.register("file", () -> new ModifiableItem(TOOL, ToolDefinitions.FILE));
     public static final RegistryObject<ModifiableItem> SCREWDRIVER = ITEMS.register("screwdriver", () -> new ModifiableItem(TOOL, ToolDefinitions.SCREWDRIVER));
     public static final RegistryObject<ModifiableItem> WRENCH = ITEMS.register("wrench", () -> new ModifiableItem(TOOL, ToolDefinitions.WRENCH));
+    public static final RegistryObject<ModifiedKnifeItem> KNIFE = ITEMS.register("knife", () -> new ModifiedKnifeItem(TOOL, ToolDefinitions.KNIFE));
 
     //Parts
+    public static final ItemObject<ToolPartItem> KNIFE_HEAD = TCONSTRUCT.register("knife_head", () -> new ToolPartItem(PART_PROPS, HeadMaterialStats.ID));
     public static final ItemObject<ToolPartItem> WRENCH_HEAD = TCONSTRUCT.register("wrench_head", () -> new ToolPartItem(PART_PROPS, HeadMaterialStats.ID));
 
     //Casts
+    public static final CastItemObject KNIFE_HEAD_CAST = TCONSTRUCT.registerCast("knife_head", SMELTERY_PROPS);
     public static final CastItemObject WRENCH_HEAD_CAST = TCONSTRUCT.registerCast("wrench_head", SMELTERY_PROPS);
 }
