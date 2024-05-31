@@ -85,5 +85,10 @@ public class EomItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.STRAW_HARVESTERS).add(
                 Items.KNIFE.get()
         );
+
+        tag(TinkerTags.Items.TOOL_PARTS).add(
+                Items.WRENCH_HEAD.get(),
+                Items.KNIFE_HEAD.get()
+        );
     }
 }
