@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:part_builder",
+  "pattern": "eot:wirecutter_head",
+  "pattern_item": [
+    {
+      "tag": "tconstruct:patterns/default"
+    },
+    {
+      "item": "eot:wirecutter_head_cast"
+    }
+  ],
+  "cost": 3,
+  "result": {
+    "item": "eot:wirecutter_head"
+  }
+}

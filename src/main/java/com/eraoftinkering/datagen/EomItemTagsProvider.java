@@ -26,7 +26,8 @@ public class EomItemTagsProvider extends ItemTagsProvider {
                 Items.FILE.get(),
                 Items.SCREWDRIVER.get(),
                 Items.WRENCH.get(),
-                Items.KNIFE.get()
+                Items.KNIFE.get(),
+                Items.WIRECUTTER.get()
         );
 
         tag(TinkerTags.Items.DURABILITY).add(
@@ -35,7 +36,8 @@ public class EomItemTagsProvider extends ItemTagsProvider {
                 Items.FILE.get(),
                 Items.SCREWDRIVER.get(),
                 Items.WRENCH.get(),
-                Items.KNIFE.get()
+                Items.KNIFE.get(),
+                Items.WIRECUTTER.get()
         );
 
         tag(TinkerTags.Items.MULTIPART_TOOL).add(
@@ -44,7 +46,8 @@ public class EomItemTagsProvider extends ItemTagsProvider {
                 Items.FILE.get(),
                 Items.SCREWDRIVER.get(),
                 Items.WRENCH.get(),
-                Items.KNIFE.get()
+                Items.KNIFE.get(),
+                Items.WIRECUTTER.get()
         );
 
         tag(TinkerTags.Items.MELEE).add(
@@ -53,7 +56,8 @@ public class EomItemTagsProvider extends ItemTagsProvider {
                 Items.FILE.get(),
                 Items.SCREWDRIVER.get(),
                 Items.WRENCH.get(),
-                Items.KNIFE.get()
+                Items.KNIFE.get(),
+                Items.WIRECUTTER.get()
         );
 
         tag(TinkerTags.Items.HELD).add(
@@ -62,7 +66,8 @@ public class EomItemTagsProvider extends ItemTagsProvider {
                 Items.FILE.get(),
                 Items.SCREWDRIVER.get(),
                 Items.WRENCH.get(),
-                Items.KNIFE.get()
+                Items.KNIFE.get(),
+                Items.WIRECUTTER.get()
         );
 
         tag(TinkerTags.Items.HARVEST).add(
@@ -71,7 +76,8 @@ public class EomItemTagsProvider extends ItemTagsProvider {
                 Items.FILE.get(),
                 Items.SCREWDRIVER.get(),
                 Items.WRENCH.get(),
-                Items.KNIFE.get()
+                Items.KNIFE.get(),
+                Items.WIRECUTTER.get()
         );
 
         tag(ModTags.KNIVES).add(
@@ -88,7 +94,8 @@ public class EomItemTagsProvider extends ItemTagsProvider {
 
         tag(TinkerTags.Items.TOOL_PARTS).add(
                 Items.WRENCH_HEAD.get(),
-                Items.KNIFE_HEAD.get()
+                Items.KNIFE_HEAD.get(),
+                Items.WRENCH_HEAD.get()
         );
     }
 }

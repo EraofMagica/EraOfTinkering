@@ -25,9 +25,11 @@ public class EomRecipeProvider extends RecipeProvider implements IToolRecipeHelp
         toolBuilding(consumer, Items.SCREWDRIVER, toolFolder);
         toolBuilding(consumer, Items.WRENCH, toolFolder);
         toolBuilding(consumer, Items.KNIFE, toolFolder);
+        toolBuilding(consumer, Items.WIRECUTTER, toolFolder);
 
         partRecipes(consumer, Items.WRENCH_HEAD, Items.WRENCH_HEAD_CAST, 3, partFolder, castFolder);
-        partRecipes(consumer, Items.KNIFE_HEAD, Items.WRENCH_HEAD_CAST, 2, partFolder, castFolder);
+        partRecipes(consumer, Items.KNIFE_HEAD, Items.KNIFE_HEAD_CAST, 2, partFolder, castFolder);
+        partRecipes(consumer, Items.WIRECUTTER_HEAD, Items.WIRECUTTER_HEAD_CAST, 3, partFolder, castFolder);
     }
 
     @Override

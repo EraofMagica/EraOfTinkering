@@ -1,0 +1,16 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head": "eot:item/tool/wirecutter/head",
+    "broken_head": "eot:item/tool/wirecutter/broken_head",
+    "handle_left": "eot:item/tool/wirecutter/handle_left",
+    "handle_right": "eot:item/tool/wirecutter/handle_right"
+  },
+  "modifier_roots": ["eot:item/tool/wirecutter/modifiers/"],
+  "parts": [
+    {"name":  "head", "index": 0, "broken": "broken_head"},
+    {"name":  "handle_left", "index": 1},
+    {"name":  "handle_right", "index": 2}
+  ]
+}

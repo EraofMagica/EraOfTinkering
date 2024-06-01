@@ -10,6 +10,10 @@
       "statType": "tconstruct:head"
     },
     {
+      "path": "eot:item/tool/parts/wirecutter_head",
+      "statType": "tconstruct:head"
+    },
+    {
       "path": "eot:item/tool/saw/handle",
       "statType": "tconstruct:handle"
     },
@@ -79,6 +83,22 @@
     },
     {
       "path": "eot:item/tool/knife/handle",
+      "statType": "tconstruct:handle"
+    },
+    {
+      "path": "eot:item/tool/wirecutter/head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/wirecutter/handle_right",
+      "statType": "tconstruct:handle"
+    },
+    {
+      "path": "eot:item/tool/wirecutter/broken_head",
+      "statType": "tconstruct:head"
+    },
+    {
+      "path": "eot:item/tool/wirecutter/handle_left",
       "statType": "tconstruct:handle"
     }
   ]

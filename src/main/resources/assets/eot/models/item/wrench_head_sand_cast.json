@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eot:item/cast/wrench_head_sand_cast"
+  }
+}

@@ -50,6 +50,13 @@ public class EomToolSlotLayout extends AbstractStationSlotLayoutProvider {
                 .addInputItem(Items.KNIFE_HEAD, 39, 35)
                 .addInputItem(TinkerToolParts.toolHandle, 21, 53)
                 .build();
+
+        defineModifiable(Items.WIRECUTTER)
+                .sortIndex(SORT_HARVEST)
+                .addInputItem(Items.WIRECUTTER_HEAD, 39, 35)
+                .addInputItem(TinkerToolParts.toughHandle, 21, 53)
+                .addInputItem(TinkerToolParts.toughHandle, 21, 43)
+                .build();
     }
 
     @Override

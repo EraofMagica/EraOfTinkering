@@ -66,6 +66,14 @@ public class EomToolDefinitionsDataProvider extends AbstractToolDefinitionDataPr
                 .stat(ToolStats.ATTACK_SPEED, 1.5f)
                 .startingSlots(SlotType.UPGRADE, 1)
                 .startingSlots(SlotType.ABILITY, 1);
+
+        define(ToolDefinitions.WIRECUTTER)
+                .part(Items.WIRECUTTER_HEAD)
+                .part(TinkerToolParts.toughHandle)
+                .part(TinkerToolParts.toughHandle)
+                .stat(ToolStats.ATTACK_DAMAGE, 1f)
+                .stat(ToolStats.ATTACK_SPEED, 1.2f)
+                .startingSlots(SlotType.UPGRADE, 2);
     }
 
     /**

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eot:item/cast/knife_head_sand_cast"
+  }
+}

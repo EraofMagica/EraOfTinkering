@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:table_casting_material",
   "cast": {
-    "tag": "eot:casts/multi_use/wrench_head"
+    "tag": "eot:casts/multi_use/knife_head"
   },
   "item_cost": 2,
   "result": "eot:knife_head"

@@ -21,12 +21,17 @@ public class EomLangProvider extends LanguageProvider {
         addItem(Items.WRENCH_HEAD, "Wrench Head");
         addItem(Items.KNIFE, "Knife");
         addItem(Items.KNIFE_HEAD, "Knife Head");
+        addItem(Items.WIRECUTTER, "Wirecutter");
+        addItem(Items.WIRECUTTER_HEAD, "Wirecutter Head");
         add("item.eot.wrench_head_cast", "Knife Head Gold Cast");
         add("item.eot.wrench_head_red_sand_cast", "Knife Head Red Sand Cast");
         add("item.eot.wrench_head_sand_cast", "Knife Head Sand Cast");
         add("item.eot.knife_head_cast", "Knife Head Gold Cast");
         add("item.eot.knife_head_red_sand_cast", "Knife Head Red Sand Cast");
         add("item.eot.knife_head_sand_cast", "Knife Head Sand Cast");
+        add("item.eot.wirecutter_head_cast", "Wirecutter Head Cast");
+        add("item.eot.wirecutter_head_sand_cast", "Wirecutter Head Sand Cast");
+        add("item.eot.wirecutter_head_red_sand_cast", "Wirecutter Head Red Sand Cast");
 
 
         //Creative Tabs
@@ -39,9 +44,11 @@ public class EomLangProvider extends LanguageProvider {
         add("item.eot.hammer.description", "The Hammer is used in building and completing machines, as well as pulverising brittle and weaker materials");
         add("item.eot.knife.description", "The Knife is used in carving and chopping mostly in cooking, it can be used for carving pumpkins, slicing cake, and chopping vegetables on a cutting board");
         add("item.eot.saw.description", "The Saw is a versatile tool used for crafting with wood, mainly used for bringing wood into the right shape");
+        add("item.eot.wirecutter.description", "The Wirecutter is a tool mainly used for cutting wires but also used for bending metal");
 
         //Part Builder
         add("pattern.eot.knife_head", "Knife Head");
         add("pattern.eot.wrench_head", "Wrench head");
+        add("pattern.eot.wirecutter_head", "Wirecutter Head");
     }
 }

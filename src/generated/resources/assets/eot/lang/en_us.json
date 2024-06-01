@@ -13,6 +13,12 @@
   "item.eot.saw.description": "The Saw is a versatile tool used for crafting with wood, mainly used for bringing wood into the right shape",
   "item.eot.screwdriver": "Screwdriver",
   "item.eot.screwdriver.description": "A Screwdriver is a tool, usually operated manually for turning screws",
+  "item.eot.wirecutter": "Wirecutter",
+  "item.eot.wirecutter.description": "The Wirecutter is a tool mainly used for cutting wires but also used for bending metal",
+  "item.eot.wirecutter_head": "Wirecutter Head",
+  "item.eot.wirecutter_head_cast": "Wirecutter Head Cast",
+  "item.eot.wirecutter_head_red_sand_cast": "Wirecutter Head Red Sand Cast",
+  "item.eot.wirecutter_head_sand_cast": "Wirecutter Head Sand Cast",
   "item.eot.wrench": "Wrench",
   "item.eot.wrench.description": "The Wrench is used in building machines and operating them",
   "item.eot.wrench_head": "Wrench Head",
@@ -21,5 +27,6 @@
   "item.eot.wrench_head_sand_cast": "Knife Head Sand Cast",
   "itemGroup.eot.tools": "Era Of Tinkering",
   "pattern.eot.knife_head": "Knife Head",
+  "pattern.eot.wirecutter_head": "Wirecutter Head",
   "pattern.eot.wrench_head": "Wrench head"
 }

@@ -8,6 +8,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -42,12 +43,13 @@ public class EraOfTinkering {
     @SubscribeEvent
     public static void gatherData(final GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
+        ExistingFileHelper fileHelper = event.getExistingFileHelper();
         if (event.includeServer()) {
-            EomBlockTagsProvider tags = new EomBlockTagsProvider(gen, event.getExistingFileHelper());
+            EomBlockTagsProvider tags = new EomBlockTagsProvider(gen, fileHelper);
             gen.addProvider(new EomToolDefinitionsDataProvider(gen));
             gen.addProvider(new EomToolSlotLayout(gen));
             gen.addProvider(new EomRecipeProvider(gen));
-            gen.addProvider(new EomItemTagsProvider(gen, tags, event.getExistingFileHelper()));
+            gen.addProvider(new EomItemTagsProvider(gen, tags, fileHelper));
         }
         if (event.includeClient()) {
             EomPartSpriteProvider partSprites = new EomPartSpriteProvider();
@@ -56,7 +58,7 @@ public class EraOfTinkering {
 
             //Tool part generator, keep this executing as the last one, it crashes at "overslime border"
             //But seems to function the same practically, this may cause future issues
-            gen.addProvider(new MaterialPartTextureGenerator(gen, event.getExistingFileHelper(), partSprites, new TinkerMaterialSpriteProvider()));
+            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, partSprites, new TinkerMaterialSpriteProvider()));
         }
     }
 
