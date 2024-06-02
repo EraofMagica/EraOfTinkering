@@ -1,4 +1,4 @@
-[![Build-1.18.2](https://github.com/EraofMagic/EraOfTinkering/actions/workflows/gradle-1.18.2.yml/badge.svg)](https://github.com/EraofMagic/EraOfTinkering/actions/workflows/gradle-1.18.2.yml)]
+[![Build-1.18.2](https://github.com/EraofMagic/EraOfTinkering/actions/workflows/gradle-1.18.2.yml/badge.svg)](https://github.com/EraofMagic/EraOfTinkering/actions/workflows/gradle-1.18.2.yml)
 
 # Era Of Tinkering
 
