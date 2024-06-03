@@ -1378,6 +1378,12 @@ bb2e628c59d4d38a07b40d023ed50aa50179ce14 data/eot/recipes/tools/parts/casting/wi
 795008a49b8a058f5488e8597fbe5442f2c1c369 data/eot/recipes/tools/parts/casting/wrench_head_composite.json
 c72e983a278d4b03f073a4c89eff47518c467598 data/eot/recipes/tools/parts/casting/wrench_head_gold_cast.json
 6ba558fbcad9792cab68ab70206d955c3e6b5121 data/eot/recipes/tools/parts/casting/wrench_head_sand_cast.json
+9ac2d848b7f02d3c6e54f8277474de7f4334e889 data/eot/tags/items/casts/multi_use/knife_head.json
+1b3abfc2d7fb064b7685fdcbb4735b2b6779bf9d data/eot/tags/items/casts/multi_use/wirecutter_head.json
+909bc73fa6a8a06e18b829597eaac5a2fe7746e5 data/eot/tags/items/casts/multi_use/wrench_head.json
+a9b8d5508c11c2a635ddaaabd5ee18c2bdd14d55 data/eot/tags/items/casts/single_use/knife_head.json
+a2319aeabc0c81a53a3c9989edf96e9b83b07d9a data/eot/tags/items/casts/single_use/wirecutter_head.json
+424743dbd8268294bf2ebea4dc9b8e62ba208a88 data/eot/tags/items/casts/single_use/wrench_head.json
 5ff8bd3f227587e1c586da86449ffea19d6bbf29 data/eot/tinkering/station_layouts/file.json
 408e93a5c536dd15cd183593ff40de7a26549692 data/eot/tinkering/station_layouts/hammer.json
 2f4c39e0f9bb1ffd778ec164968ca8645e06c879 data/eot/tinkering/station_layouts/knife.json
@@ -1395,6 +1401,12 @@ cb39ede039f1356e8b96b13ae1ff16a6c15fbb11 data/eot/tinkering/tool_definitions/wre
 78c6413557ff28a27c1a88d58ddc80c5f014a64f data/farmersdelight/tags/items/straw_harvesters.json
 78c6413557ff28a27c1a88d58ddc80c5f014a64f data/farmersdelight/tags/items/tools/knives.json
 78c6413557ff28a27c1a88d58ddc80c5f014a64f data/forge/tags/items/tools/knives.json
+d1df63993f73117d7b6111025cedf873fbbd6a47 data/tconstruct/tags/items/casts.json
+18ad93292e0c8d1dabb5bade92d360912ba19033 data/tconstruct/tags/items/casts/gold.json
+4777cf915d516f04dbd5201a2d13b7d387b6faf5 data/tconstruct/tags/items/casts/multi_use.json
+495ae39f723268e08efbe3c60e2b2709b2776576 data/tconstruct/tags/items/casts/red_sand.json
+12704bdcc0fd65b928dbe94d1276ed8f083cf3d5 data/tconstruct/tags/items/casts/sand.json
+3c0da6aac1ae55e578a407158f12727371ccf6a1 data/tconstruct/tags/items/casts/single_use.json
 8bea26223b3a4f06d408a0bfc2ade6d6c4bf5ca0 data/tconstruct/tags/items/modifiable.json
 8bea26223b3a4f06d408a0bfc2ade6d6c4bf5ca0 data/tconstruct/tags/items/modifiable/durability.json
 8bea26223b3a4f06d408a0bfc2ade6d6c4bf5ca0 data/tconstruct/tags/items/modifiable/harvest.json
