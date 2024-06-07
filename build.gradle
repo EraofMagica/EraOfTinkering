@@ -22,7 +22,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: "org.spongepowered.mixin"
 
 
-version = '1.0'
+version = '1.1'
 group = 'com.yourname.modid' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'eot'
 
@@ -205,7 +205,7 @@ jar {
         attributes([
                 "Specification-Title"     : "EraOfTinkering",
                 "Specification-Vendor"    : "robdu",
-                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Specification-Version"   : "1.1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "eraoftinkering",

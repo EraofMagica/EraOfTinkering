@@ -56,9 +56,8 @@ public class EraOfTinkering {
             gen.addProvider(new EomLangProvider(gen));
             gen.addProvider(new GeneratorPartTextureJsonGenerator(gen, EraOfTinkering.MOD_ID, partSprites));
 
-            //Tool part generator, keep this executing as the last one, it crashes at "overslime border"
-            //But seems to function the same practically, this may cause future issues
-            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, partSprites, new TinkerMaterialSpriteProvider()));
+            //Note that this generated textures in the four digits, keep this commented unless neccesary or it will cause issues with git
+            //gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, partSprites, new TinkerMaterialSpriteProvider()));
         }
     }
 
