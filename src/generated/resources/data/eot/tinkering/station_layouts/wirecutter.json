@@ -18,8 +18,8 @@
     {
       "icon": "tconstruct:tough_handle",
       "translation_key": "item.tconstruct.tough_handle",
-      "x": 21,
-      "y": 53,
+      "x": 19,
+      "y": 55,
       "filter": {
         "item": "tconstruct:tough_handle"
       }
@@ -27,8 +27,8 @@
     {
       "icon": "tconstruct:tough_handle",
       "translation_key": "item.tconstruct.tough_handle",
-      "x": 21,
-      "y": 43,
+      "x": 19,
+      "y": 35,
       "filter": {
         "item": "tconstruct:tough_handle"
       }
