@@ -23,6 +23,7 @@ public class EomLangProvider extends LanguageProvider {
         addItem(Items.KNIFE_HEAD, "Knife Head");
         addItem(Items.WIRECUTTER, "Wirecutter");
         addItem(Items.WIRECUTTER_HEAD, "Wirecutter Head");
+        addItem(Items.MOLTEN_VINTEUM_BUCKET, "Molten Vinteum Bucket");
         add("item.eot.wrench_head_cast", "Knife Head Gold Cast");
         add("item.eot.wrench_head_red_sand_cast", "Knife Head Red Sand Cast");
         add("item.eot.wrench_head_sand_cast", "Knife Head Sand Cast");

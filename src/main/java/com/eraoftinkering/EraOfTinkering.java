@@ -1,9 +1,13 @@
 package com.eraoftinkering;
 
 import com.eraoftinkering.datagen.*;
+import com.eraoftinkering.registries.Blocks;
+import com.eraoftinkering.registries.Fluids;
 import com.eraoftinkering.registries.Items;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.color.item.ItemColors;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
@@ -12,13 +16,12 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.slf4j.Logger;
 import slimeknights.tconstruct.library.client.data.material.GeneratorPartTextureJsonGenerator;
-import slimeknights.tconstruct.library.client.data.material.MaterialPartTextureGenerator;
 import slimeknights.tconstruct.library.client.model.tools.ToolModel;
-import slimeknights.tconstruct.tools.data.sprite.TinkerMaterialSpriteProvider;
 
 
 @Mod("eot")
@@ -35,9 +38,17 @@ public class EraOfTinkering {
 
         Items.ITEMS.register(MOD_BUS);
         Items.TCONSTRUCT.register(MOD_BUS);
+        Blocks.BLOCKS.register(MOD_BUS);
+        Fluids.FLUIDS.register(MOD_BUS);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    private void clientSetup(final FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_SOURCE.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_FLOWING.get(), RenderType.translucent());
     }
 
     @SubscribeEvent
@@ -50,6 +61,7 @@ public class EraOfTinkering {
             gen.addProvider(new EomToolSlotLayout(gen));
             gen.addProvider(new EomRecipeProvider(gen));
             gen.addProvider(new EomItemTagsProvider(gen, tags, fileHelper));
+            gen.addProvider(new EomFluidTagsProvider(gen, fileHelper));
         }
         if (event.includeClient()) {
             EomPartSpriteProvider partSprites = new EomPartSpriteProvider();
