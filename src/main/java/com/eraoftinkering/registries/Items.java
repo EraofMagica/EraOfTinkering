@@ -45,5 +45,7 @@ public class Items {
     public static final CastItemObject WIRECUTTER_HEAD_CAST = TCONSTRUCT.registerCast("wirecutter_head", SMELTERY_PROPS);
 
     //Buckets
-    public static final RegistryObject<Item> MOLTEN_VINTEUM_BUCKET = ITEMS.register("molten_vinteum_bucket", () -> new BucketItem(Fluids.MOLTEN_VINTEUM_FLOWING, new Item.Properties().tab(CreativeModeTabs.EOM_SMELTERY).stacksTo(1)));
+    public static final RegistryObject<Item> MOLTEN_VINTEUM_BUCKET
+            = ITEMS.register("molten_vinteum_bucket", () ->
+            new BucketItem(Fluids.MOLTEN_VINTEUM_FLOWING, new Item.Properties().tab(CreativeModeTabs.EOM_SMELTERY).stacksTo(1)));
 }

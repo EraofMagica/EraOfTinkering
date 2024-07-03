@@ -46,9 +46,12 @@ public class EraOfTinkering {
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_SOURCE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_FLOWING.get(), RenderType.translucent());
+
+        event.enqueueWork(() -> {
+            ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_BLOCK.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(Fluids.MOLTEN_VINTEUM_FLOWING.get(), RenderType.translucent());
+        });
     }
 
     @SubscribeEvent

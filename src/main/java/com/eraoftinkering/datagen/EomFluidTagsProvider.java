@@ -1,7 +1,7 @@
 package com.eraoftinkering.datagen;
 
 import com.eraoftinkering.EraOfTinkering;
-//import com.eraoftinkering.registries.Fluids;
+import com.eraoftinkering.registries.Fluids;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.FluidTagsProvider;
 import net.minecraft.tags.FluidTags;
@@ -15,6 +15,6 @@ public class EomFluidTagsProvider extends FluidTagsProvider {
 
     @Override
     protected void addTags() {
-        //this.tag(FluidTags.LAVA).add(Fluids.MOLTEN_VINTEUM_FLOWING.get(), Fluids.MOLTEN_VINTEUM_FLOWING.get());
+        this.tag(FluidTags.WATER).add(Fluids.MOLTEN_VINTEUM_SOURCE.get(), Fluids.MOLTEN_VINTEUM_FLOWING.get());
     }
 }

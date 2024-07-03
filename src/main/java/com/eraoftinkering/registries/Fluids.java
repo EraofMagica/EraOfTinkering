@@ -16,8 +16,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class Fluids {
 
-    public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("tconstruct:block/fluid/molten/flowing");
-    public static final ResourceLocation WATER_FLOWING_RL = new ResourceLocation("tconstruct:block/fluid/molten/still");
+    public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/water_still");
+    public static final ResourceLocation WATER_FLOWING_RL = new ResourceLocation("block/water_flow");
     public static final ResourceLocation WATER_OVERLAY_RL = new ResourceLocation("block/water_overlay");
 
     public static final DeferredRegister<Fluid> FLUIDS
@@ -32,10 +32,10 @@ public class Fluids {
     public static final ForgeFlowingFluid.Properties VINTEUM_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> MOLTEN_VINTEUM_SOURCE.get(), () -> MOLTEN_VINTEUM_SOURCE.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
             .density(35).luminosity(5).viscosity(5).sound(SoundEvents.BUCKET_EMPTY_LAVA).overlay(WATER_OVERLAY_RL)
-            .color(0xbffcba03)).slopeFindDistance(1).levelDecreasePerBlock(2)
+            .color(0xF9FFFFFF)).slopeFindDistance(2).levelDecreasePerBlock(2)
             .block(() -> Fluids.MOLTEN_VINTEUM_BLOCK.get()).bucket(() -> Items.MOLTEN_VINTEUM_BUCKET.get());
 
     public static final RegistryObject<LiquidBlock> MOLTEN_VINTEUM_BLOCK = Blocks.BLOCKS.register("molten_vinteum",
-            () -> new LiquidBlock(() -> Fluids.MOLTEN_VINTEUM_SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
-                    .noCollission().strength(100f)));
+            () -> new LiquidBlock(() -> Fluids.MOLTEN_VINTEUM_SOURCE.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops()));
 }
