@@ -15,6 +15,6 @@ public class EomFluidTagsProvider extends FluidTagsProvider {
 
     @Override
     protected void addTags() {
-        this.tag(FluidTags.WATER).add(Fluids.MOLTEN_VINTEUM_SOURCE.get(), Fluids.MOLTEN_VINTEUM_FLOWING.get());
+        this.tag(FluidTags.LAVA).add(Fluids.MOLTEN_VINTEUM_SOURCE.get(), Fluids.MOLTEN_VINTEUM_FLOWING.get());
     }
 }

@@ -30,12 +30,12 @@ public class Fluids {
             = FLUIDS.register("molten_vinteum_flowing", () -> new ForgeFlowingFluid.Flowing(Fluids.VINTEUM_PROPERTIES));
 
     public static final ForgeFlowingFluid.Properties VINTEUM_PROPERTIES = new ForgeFlowingFluid.Properties(
-            () -> MOLTEN_VINTEUM_SOURCE.get(), () -> MOLTEN_VINTEUM_SOURCE.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
-            .density(35).luminosity(5).viscosity(5).sound(SoundEvents.BUCKET_EMPTY_LAVA).overlay(WATER_OVERLAY_RL)
-            .color(0xF9FFFFFF)).slopeFindDistance(2).levelDecreasePerBlock(2)
+            () -> MOLTEN_VINTEUM_SOURCE.get(), () -> MOLTEN_VINTEUM_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
+            .density(15).luminosity(2).viscosity(5).sound(SoundEvents.BUCKET_EMPTY_LAVA).overlay(WATER_OVERLAY_RL)
+            .color(0xF9FFFFFF)).slopeFindDistance(1).levelDecreasePerBlock(1)
             .block(() -> Fluids.MOLTEN_VINTEUM_BLOCK.get()).bucket(() -> Items.MOLTEN_VINTEUM_BUCKET.get());
 
     public static final RegistryObject<LiquidBlock> MOLTEN_VINTEUM_BLOCK = Blocks.BLOCKS.register("molten_vinteum",
-            () -> new LiquidBlock(() -> Fluids.MOLTEN_VINTEUM_SOURCE.get(), BlockBehaviour.Properties.of(Material.WATER)
+            () -> new LiquidBlock(() -> Fluids.MOLTEN_VINTEUM_SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
                     .noCollission().strength(100f).noDrops()));
 }
